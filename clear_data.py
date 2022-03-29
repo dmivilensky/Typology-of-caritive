@@ -53,6 +53,9 @@ if __name__ == "__main__":
                 columns.append(f"{FEATURES[h_features]}-{number}")
                 vals.append(df.iloc[h, 3])
             
+            columns.append("region")
+            vals.append(langs["Macroarea (у нас)"][i])
+
             if len(result.columns.tolist()) == 0:
                 result = pd.DataFrame(columns=columns)
 
@@ -72,5 +75,7 @@ if __name__ == "__main__":
     # for column in result.columns:
     #     print(result[column].unique())
 
-    with open("stats.pkl", "wb") as file:
-        pickle.dump(result, file)
+    # with open("stats.pkl", "wb") as file:
+    #     pickle.dump(result, file)
+
+    result.to_csv("stats.csv", na_rep='nan')  
