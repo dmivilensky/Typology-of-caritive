@@ -1,0 +1,101 @@
+№,language,Macroarea (у нас),ISO-639-3,Glottocode
+1,Eastern Oromo,Africa,hae,east2652
+2,Gban,Africa,ggu,gagu1242
+3,Luo (Kenya and Tanzania),Africa,luo,luok1236
+4,Jamsay Dogon,Africa,djm,jams1239
+5,Zulu,Africa,zul,zulu1248
+6,Modern Hebrew,Africa,heb,hebr1245
+7,Ik,Africa,ikx,ikkk1242
+8,Yoruba,Africa,yor,yoru1245
+9,Koromfe,Africa,kfz,koro1298
+10,Sandawe,Africa,sad,sand1273
+11,Northern Gumuz,Africa,guk,gumu1244
+12,Efe,Africa,efe,efee1239
+13,Hausa,Africa,hau,haus1257
+14,Ewe,Africa,ewe,ewee1241
+15,Basque,Eurasia,eus,basq1248
+16,Finnish,Eurasia,fin,sout1743
+17,Lezgian,Eurasia,lez,lezg1247
+18,Lithuanian,Eurasia,lit,lith1251
+19,Nanai,Eurasia,gld,nana1257
+20,Telugu,Eurasia,tel,telu1262
+21,Halh Mongolian,Eurasia,khk,halh1238
+22,Hindi,Eurasia,hin,hind1269
+23,Chuvash,Eurasia,chv,chuv1255
+24,Burmese,Southeast Asia & Oceania,mya,nucl1310
+25,East Makian,Southeast Asia & Oceania,mky,east2440
+26,Vietnamese,Southeast Asia & Oceania,vie,viet1252
+27,Garo,Southeast Asia & Oceania,grt,garo1247
+28,Indonesian,Southeast Asia & Oceania,ind,indo1316
+29,Mandarin Chinese,Southeast Asia & Oceania,cmn,mand1415
+30,Central Khmer,Southeast Asia & Oceania,khm,cent1989
+31,Lepcha,Southeast Asia & Oceania,lep,lepc1244
+32,Plateau Malagasy,Southeast Asia & Oceania,plt,plat1254
+33,Mundari,Southeast Asia & Oceania,unr,mund1320
+34,Paiwan,Southeast Asia & Oceania,pwn,paiw1248
+35,Tagalog,Southeast Asia & Oceania,tgl,taga1270
+36,Thai,Southeast Asia & Oceania,tha,thai1261
+37,Tibetan,Southeast Asia & Oceania,bod,tibe1272
+38,Chamorro,Southeast Asia & Oceania,cha,cham1312
+39,Abau,Australia & New Guinea,aau,abau1245
+40,Abui,Australia & New Guinea,abz,abui1241
+41,Amele,Australia & New Guinea,aey,amel1241
+42,Central Asmat,Australia & New Guinea,cns,cent2117
+43,Bauni,Australia & New Guinea,wra,bara1405
+44,Bitur,Australia & New Guinea,mcc,bitu1242
+45,Bukiyip,Australia & New Guinea,ape,buki1249
+46,Wambayan,Australia & New Guinea,wmb,nucl1328
+47,Daga,Australia & New Guinea,dgz,daga1275
+48,Yimas,Australia & New Guinea,yee,yima1243
+49,Kayardild,Australia & New Guinea,gyd,kaya1319
+50,Kilmeri,Australia & New Guinea,kih,kilm1241
+51,Kitja,Australia & New Guinea,gia,kitj1240
+52,Gooniyandi,Australia & New Guinea,gni,goon1238
+53,Limilngan,Australia & New Guinea,lmc,nucl1327
+54,Mullukmulluk,Australia & New Guinea,mpb,mull1237
+55,Marind,Australia & New Guinea,mrz,nucl1622
+56,Martuthunira,Australia & New Guinea,vma,mart1255
+57,Dera (Indonesia),Australia & New Guinea,kbv,meng1271
+58,Mian,Australia & New Guinea,mpt,mian1256
+59,Moskona,Australia & New Guinea,mtj,mosk1236
+60,Wubuy,Australia & New Guinea,nuy,nung1290
+61,Oksapmin,Australia & New Guinea,opm,oksa1245
+62,Bardi,Australia & New Guinea,bcj,bard1255
+63,Taulil,Australia & New Guinea,tuh,taul1251
+64,Tiwi,Australia & New Guinea,tiw,tiwi1244
+65,Northeast Kiwai,Australia & New Guinea,kiw,nort2930
+66,Momu-Fas,Australia & New Guinea,fqs,fass1245
+67,Folopa,Australia & New Guinea,ppo,folo1238
+68,Aleut,North America,ale,aleu1260
+69,Arapaho,North America,arp,arap1274
+70,Miskito,North America,miq,misk1235
+71,Navajo,North America,nav,nava1243
+72,Tlaxcala-Puebla-Central Nahuatl,North America,nhn,cent2132
+73,Mezquital Otomi,North America,ote,mezq1235
+74,Seri,North America,sei,seri1257
+75,Lakota,North America,lkt,lako1247
+76,Chimalapa Zoque,North America,zoh,chim1300
+77,Huehuetla Tepehua,North America,tee,hueh1236
+78,Hopi,North America,hop,hopi1249
+79,Tzeltal,North America,tzh,tzel1254
+80,Choctaw,North America,cho,choc1276
+81,Southern Sierra Miwok,North America,skd,sout2985
+82,Awa-Cuaiquer,South America,kwi,awac1239
+83,Central Aymara,South America,ayr,cent2142
+84,Apurina,South America,apu,apur1254
+85,Huambisa,South America,hub,huam1247
+86,Paraguayan Guarani,South America,gug,para1311
+87,Daw,South America,kwa,daww1239
+88,Maquiritari,South America,mch,maqu1238
+89,Qawasqar,South America,alc,qawa1238
+90,Cashibo-Cacataibo,South America,cbr,cash1251
+91,Mapudungun,South America,arn,mapu1245
+92,Wichi Lhamtes Vejoz,South America,wlv,wich1263
+93,Machiguenga,South America,mcb,mach1267
+94,Kotiria,South America,gvc,guan1269
+95,Puinave,South America,pui,puin1248
+96,Rama,South America,rma,rama1270
+97,Huaylas Ancash Quechua,South America,qwh,huay1240
+98,Urarina,South America,ura,urar1246
+99,Xavante,South America,xav,xava1240
+100,Ese Ejja,South America,ese,esee1248
