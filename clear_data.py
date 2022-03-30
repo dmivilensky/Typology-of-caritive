@@ -1,9 +1,10 @@
 import os
 import tqdm
-import pickle
 import numpy as np
 import pandas as pd
 
+
+STRICT_MAPPING = False
 FEATURES = [
     "level", "member", "limited", "compatible", 
     "productive", "syntax_role", "special", 
@@ -11,6 +12,7 @@ FEATURES = [
     "reference", "semantic_role", "limited_comember", 
     "state", "involvement", "theme_rheme"
 ]
+
 
 if __name__ == "__main__":
     langs = pd.read_csv('langs.csv')
@@ -66,16 +68,26 @@ if __name__ == "__main__":
                 # print(f"{iso}-{j+1}")
 
     os.chdir("..")
-    result = result.replace({
-        "ND": np.NaN, "n/d": np.NaN, "N/D": np.NaN, "ND?": np.NaN, "?": np.NaN, "ND ": np.NaN,
-        "IRR": 0, "irr": 0, "irr?": 0, "IRR?": 0, "IRR ": 0, "0?": 0, "0??": 0, 
-        "1?": 1, "1??": 1, "1 или ND?": 1, "1? / IRR": 1, "1? ": 1, "n/d-1": 1, "1?? ": 1,
-        "prefix": np.NaN, "1/0": np.NaN, "ewü w-ütö(mö)-a sü'na jadö-'da-nñe [1SG 1S-aller-NPST chien avec-NEG-PL' ": np.NaN})
-    
+    if STRICT_MAPPING:
+        result = result.replace({
+            "ND": np.NaN, "n/d": np.NaN, "N/D": np.NaN, "ND?": np.NaN, "?": np.NaN, "ND ": np.NaN,
+            "IRR": 0, "irr": 0, "irr?": 0, "IRR?": 0, "IRR ": 0, "0?": 0, "0??": 0, 
+            "1?": 1, "1??": 1, "1 или ND?": 1, "1? / IRR": 1, "1? ": 1, "n/d-1": 1, "1?? ": 1,
+            "prefix": np.NaN, "1/0": np.NaN, "ewü w-ütö(mö)-a sü'na jadö-'da-nñe [1SG 1S-aller-NPST chien avec-NEG-PL' ": np.NaN})
+    else:
+        result = result.replace({
+            "ND": "ND", "n/d": "ND", "N/D": "ND", "ND?": "ND", "?": "ND", "ND ": "ND",
+            "IRR": "IRR", "irr": "IRR", "irr?": "IRR", "IRR?": "IRR", "IRR ": "IRR", "0?": 0, "0??": 0, 
+            "1?": 1, "1??": 1, "1 или ND?": 1, "1? / IRR": 1, "1? ": 1, "n/d-1": 1, "1?? ": 1,
+            "prefix": "ND", "1/0": "ND", "ewü w-ütö(mö)-a sü'na jadö-'da-nñe [1SG 1S-aller-NPST chien avec-NEG-PL' ": "ND"})
+
     # for column in result.columns:
     #     print(result[column].unique())
 
     # with open("stats.pkl", "wb") as file:
     #     pickle.dump(result, file)
 
-    result.to_csv("stats.csv", na_rep='nan')  
+    if STRICT_MAPPING:
+        result.to_csv("stats.csv", na_rep='nan')
+    else:
+        result.to_csv("stats_soft.csv", na_rep='ND')
